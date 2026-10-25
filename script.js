@@ -289,7 +289,6 @@ function finalizarPedidoWhatsApp() {
   });
 
   mensagem += "\nTotal dos produtos: " + formatarPreco(total);
-  mensagem += "\nEntrega, se houver, a combinar.";
   mensagem += "\n\nAguardo a confirmação da disponibilidade. Obrigado(a)!";
 
   const url =
