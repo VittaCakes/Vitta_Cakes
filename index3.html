@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitta Cakes | Meus pedidos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topo">
+        <a class="logo" href="index.html">Vita <span>Cakes</span></a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index2.html">Cardápio</a>
+            <a class="ativo" href="index3.html">
+                Meus pedidos <span class="contador">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="pagina">
+        <section class="titulo-pagina">
+            <span class="etiqueta">SEU MOMENTO DOCE</span>
+            <h1>Meu pedido</h1>
+            <p>Confira os itens escolhidos antes de finalizar.</p>
+        </section>
+
+        <div class="area-pedido">
+            <section class="caixa-pedido">
+                <h2>Seus produtos</h2>
+
+                <div id="lista-carrinho"></div>
+
+                <div class="total-pedido">
+                    <span>Total dos produtos</span>
+                    <strong id="total-pedido">R$ 0,00</strong>
+                </div>
+
+                <a href="index2.html" class="link-voltar">
+                    ← Continuar escolhendo
+                </a>
+                <div class="aviso-carrinho">
+   A disponibilidade e eventuais custos de entrega serão confirmados pelo WhatsApp.
+</div>
+
+                <button
+                    type="button"
+                    class="botao botao-finalizar"
+                    id="finalizar-whatsapp"
+                    onclick="finalizarPedidoWhatsApp()">
+                    Finalizar pelo WhatsApp
+                </button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <a class="logo logo-rodape" href="index.html">
+            Vitta <span>Cakes</span>
+        </a>
+        <p>Feito com carinho para adoçar seu dia. ♡</p>
+    </footer>
+</body>
+</html>
